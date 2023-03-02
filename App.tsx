@@ -8,6 +8,7 @@
 import React from 'react';
 import type {PropsWithChildren} from 'react';
 import {
+  hello,
   SafeAreaView,
   ScrollView,
   StatusBar,
