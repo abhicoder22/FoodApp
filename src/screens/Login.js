@@ -4,10 +4,8 @@ import {
   Text,
   StyleSheet,
   TextInput,
-  TouchableOpacityBase,
   TouchableOpacity,
 } from 'react-native';
-import {Button} from 'react-native';
 const Login = navigation => {
   return (
     <View style={styles.viewStyle}>
@@ -19,7 +17,6 @@ const Login = navigation => {
       <View style={styles.userStyle}>
         <TextInput style={styles.inputStyle} placeholder="enter password" />
       </View>
-      {/* <Button title="Login" onPress={() => console.log('Button pressed')} /> */}
       <View>
         <TouchableOpacity style={styles.buttonStyle}>
           <Text style={styles.buttunTextStyle}>Login</Text>
