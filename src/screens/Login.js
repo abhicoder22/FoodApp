@@ -5,8 +5,10 @@ import {
   StyleSheet,
   TextInput,
   TouchableOpacity,
+  Button,
 } from 'react-native';
-const Login = navigation => {
+
+const Login = ({navigation}) => {
   return (
     <View style={styles.viewStyle}>
       <Text style={styles.titleStyle}>Login</Text>
@@ -18,7 +20,9 @@ const Login = navigation => {
         <TextInput style={styles.inputStyle} placeholder="enter password" />
       </View>
       <View>
-        <TouchableOpacity style={styles.buttonStyle}>
+        <TouchableOpacity
+          style={styles.buttonStyle}
+          onPress={() => navigation.navigate('Home')}>
           <Text style={styles.buttunTextStyle}>Login</Text>
         </TouchableOpacity>
       </View>
